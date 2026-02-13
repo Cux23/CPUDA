@@ -24,7 +24,6 @@ function [acc]=CPUDA(X_s,Y_s,X_t,Y_tt,P_dim,alpha,gamma)
     best_acc = 0;               % 初始化最佳 acc
     
     X=[X_s X_t];
-    % M = Init_M(ns,nt);
 
     % init C_t;
     C_s = (P' * X_s * Y_s') ./ (sum(Y_s, 2)');  % Target class prototype
